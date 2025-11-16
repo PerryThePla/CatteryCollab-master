@@ -19,6 +19,7 @@ namespace Domain.Model.Entities
         public Cap CityCap { get; private set; }
         public Adopter(string firstName, string lastName, Email address, PhoneNumber phone, FiscalCode fiscalCode, string city, Cap cityCap)
         {
+            //controlli
             if (string.IsNullOrWhiteSpace(firstName)) throw new ArgumentNullException(nameof(firstName), "First name cannot be null or empty.");
             if (string.IsNullOrWhiteSpace(lastName)) throw new ArgumentNullException(nameof(lastName), "Last name cannot be null or empty.");
             if (string.IsNullOrWhiteSpace(city)) throw new ArgumentNullException(nameof(city), "City cannot be null or empty.");

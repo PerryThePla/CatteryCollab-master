@@ -31,6 +31,7 @@ Adoption adoption = new Adoption(
     adopter: adopter,
     adoptionDate: DateOnly.FromDateTime(DateTime.Now)
 );
+//ui
 Console.WriteLine($"Adoption Created: Cat {adoption.AdoptedCat.Name} adopted by {adoption.AdopterData.FirstName} on {adoption.AdoptionDate}");
 JsonAdoptionRepository repository = new JsonAdoptionRepository("C:\\Users\\giacomo.strambi\\Desktop\\Json\\adoption.json");
 try

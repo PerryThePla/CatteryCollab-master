@@ -8,4 +8,5 @@ using System.Threading.Tasks;
 namespace Infrastracture.Persistance.Dto
 {
     public record AdopterPersistanceDto(string FirstName, string LastName, string Address, string Phone, string FiscalCode, string City, string CityCap);
+    //def
 }

@@ -32,6 +32,7 @@ namespace WpfCattery
 
             try
             {
+                //wpf
                 Email email = new Email(TBEmail.Text);
                 PhoneNumber phone = new PhoneNumber(TBPhone.Text);
                 FiscalCode fiscalCode = new FiscalCode(TBFiscalCode.Text);
