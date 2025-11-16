@@ -55,6 +55,7 @@ public class AdopterTests
         Adopter adopter = new Adopter("John", "Doe", email, phone, fiscalCode, "New York", cap);
         Assert.AreEqual(cap, adopter.CityCap);
     }
+    //test
     [TestMethod]
     public void AdopterCostructor_Phone_WorksCorrectly()
     {

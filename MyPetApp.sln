@@ -7,17 +7,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{6C83A596-D32
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{E9AEF278-60A8-4AEA-AD86-8E18B26C19C4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestDomain", "TestDomain\TestDomain.csproj", "{616A50C2-2D98-45E4-8A2C-DEFAFA00766D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestDomain", "TestDomain\TestDomain.csproj", "{616A50C2-2D98-45E4-8A2C-DEFAFA00766D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "Application\Application.csproj", "{0BB86BC1-E757-4FC2-BDE1-243C77EE4134}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application", "Application\Application.csproj", "{0BB86BC1-E757-4FC2-BDE1-243C77EE4134}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{57D5CE10-D6EF-4A93-9F14-FBAAFB3017E9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "Domain\Domain.csproj", "{57D5CE10-D6EF-4A93-9F14-FBAAFB3017E9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastracture", "Infrastracture\Infrastracture.csproj", "{3B2B75B9-A4EB-4E46-9000-80226702DCA7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastracture", "Infrastracture\Infrastracture.csproj", "{3B2B75B9-A4EB-4E46-9000-80226702DCA7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UI Console", "UI Console\UI Console.csproj", "{BCE7DBCA-9683-4EE5-AB69-6CD75E25FBAB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UI Console", "UI Console\UI Console.csproj", "{BCE7DBCA-9683-4EE5-AB69-6CD75E25FBAB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfCattery", "WpfCattery\WpfCattery.csproj", "{B6ACBB22-386A-47DC-919C-A42377109DB1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfCattery", "WpfCattery\WpfCattery.csproj", "{B6ACBB22-386A-47DC-919C-A42377109DB1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
