@@ -40,6 +40,7 @@ namespace Application.UseCases
         public IEnumerable<AdoptionDto>? GetAdoptionsByAdoptionDate(DateOnly date)
         {
             return _adoptoinRepository.GetAdoptionsByDate(date).Select(adoption => adoption.ToDto());
+            //def finale
         }
     }
 }
