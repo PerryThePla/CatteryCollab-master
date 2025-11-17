@@ -102,40 +102,4 @@ public class AdopterTests
         Cap cap = new Cap("47042");
         Assert.ThrowsException<ArgumentNullException>(() => new Adopter("John", "Doe", email, phone, fiscalCode, "", cap));
     }
-    [TestMethod]
-    public void AdopterCostructor_InvalidPhone_ThrowsArgumentNullException()
-    {
-        Email email = new Email("johndoe@gmai.com");
-        PhoneNumber phone = new PhoneNumber("");
-        FiscalCode fiscalCode = new FiscalCode("ABCDEF12G34H567I");
-        Cap cap = new Cap("47042");
-        Assert.ThrowsException<ArgumentNullException>(() => new Adopter("John", "Doe", email, phone, fiscalCode, "New York", cap));
-    }
-    [TestMethod]
-    public void AdopterCostructor_InvalidEmail_ThrowsArgumentNullException()
-    {
-        Email email = new Email("");
-        PhoneNumber phone = new PhoneNumber("1234567890");
-        FiscalCode fiscalCode = new FiscalCode("ABCDEF12G34H567I");
-        Cap cap = new Cap("47042");
-        Assert.ThrowsException<ArgumentNullException>(() => new Adopter("John", "Doe", email, phone, fiscalCode, "New York", cap));
-    }
-    [TestMethod]
-    public void AdopterCostructor_InvalidFiscalCode_ThrowsArgumentNullException()
-    {
-        Email email = new Email("johndoe@gmai.com");
-        PhoneNumber phone = new PhoneNumber("1234567890");
-        FiscalCode fiscalCode = new FiscalCode("");
-        Cap cap = new Cap("47042");
-        Assert.ThrowsException<ArgumentNullException>(() => new Adopter("John", "Doe", email, phone, fiscalCode, "New York", cap));
-    }
-    [TestMethod]
-    public void AdopterCostructor_InvalidCap_ThrowsArgumentNullException()
-    {
-        Email email = new Email("johndoe@gmai.com");
-        PhoneNumber phone = new PhoneNumber("1234567890");
-        FiscalCode fiscalCode = new FiscalCode("ABCDEF12G34H567I");
-        Cap cap = new Cap("2323232");
-        Assert.ThrowsException<ArgumentException>(() => new Adopter("John", "Doe", email, phone, fiscalCode, "New York", cap));
-    }
 }

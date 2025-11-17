@@ -1,0 +1,57 @@
+﻿<Window x:Class="WpfCattery.UpdateAdoptionWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Dettagli Adozione"
+        Height="430" Width="400"
+        WindowStartupLocation="CenterOwner">
+    <StackPanel Margin="20">
+        <TextBlock Text="Dettagli Adozione"
+                   FontSize="24"
+                   FontWeight="Bold"
+                   Margin="0,0,0,20"/>
+
+        <GroupBox Header="Gatto" Margin="0,0,0,15">
+            <StackPanel Margin="10">
+                <TextBlock>
+                    <Run Text="Nome: " FontWeight="Bold"/>
+                    <Run x:Name="TBCatName"/>
+                </TextBlock>
+                <TextBlock>
+                    <Run Text="Razza: " FontWeight="Bold"/>
+                    <Run x:Name="TBCatBreed"/>
+                </TextBlock>
+                <TextBlock>
+                    <Run Text="ID: " FontWeight="Bold"/>
+                    <Run x:Name="TBCatID"/>
+                </TextBlock>
+            </StackPanel>
+        </GroupBox>
+
+        <GroupBox Header="Adottante" Margin="0,0,0,15">
+            <StackPanel Margin="10">
+                <TextBlock>
+                    <Run Text="Nome: " FontWeight="Bold"/>
+                    <Run x:Name="TBAdopterName"/>
+                </TextBlock>
+                <TextBlock>
+                    <Run Text="Codice Fiscale: " FontWeight="Bold"/>
+                    <Run x:Name="TBAdopterFC"/>
+                </TextBlock>
+                <TextBlock>
+                    <Run Text="Telefono: " FontWeight="Bold"/>
+                    <Run x:Name="TBAdopterPhone"/>
+                </TextBlock>
+            </StackPanel>
+        </GroupBox>
+
+        <StackPanel Margin="0,0,0,15">
+            <TextBlock Text="Data Adozione:" Margin="0,0,0,5"/>
+            <DatePicker x:Name="DPAdoptionDate" IsEnabled="False"  SelectedDateFormat="Short"/>
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <Button Content="Chiudi" Width="80" Click="Close_Click" Margin="5"/>
+            <Button Content="Elimina" Width="80" Click="Elimina_Click"/>
+        </StackPanel>
+    </StackPanel>
+</Window>

@@ -37,9 +37,18 @@ namespace Domain.Model.Entities
             if (Status == AdoptionStatus.Cancelled)
             {
                 throw new InvalidOperationException("The adoption is already cancelled.");
-                return;
             }
             Status = AdoptionStatus.Cancelled;
+        }
+        public override bool Equals(object? obj)
+        {
+            if (obj is not Adoption other)
+            {
+                return false;
+            }
+            return AdoptedCat.Name==other.AdoptedCat.Name &&
+                   AdoptionDate == other.AdoptionDate &&
+                   AdopterData.FiscalCode==other.AdopterData.FiscalCode;
         }
 
     }

@@ -1,0 +1,44 @@
+﻿<Window x:Class="WpfCattery.ManageAdoptionsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Gestione Adozioni" Height="450" Width="900">
+    <Grid Margin="12">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="0,0,0,10">
+            <TextBlock Text="Cerca:" VerticalAlignment="Center" Margin="0,0,10,0"/>
+            <TextBox x:Name="TBSearch" Width="200" TextChanged="TBSearch_TextChanged"/>
+        </StackPanel>
+
+        <ListBox x:Name="AdoptionsList" Grid.Row="1"
+                 MouseDoubleClick="AdoptionsList_MouseDoubleClick">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Border BorderBrush="LightGray" BorderThickness="1" Padding="10" Margin="0,5,0,5">
+                        <StackPanel>
+                            <TextBlock FontSize="14" FontWeight="Bold">
+                                <Run Text="Gatto: "/>
+                                <Run Text="{Binding Cat.name}"/>
+                                <Run Text=" ("/>
+                                <Run Text="{Binding Cat.breed}"/>
+                                <Run Text=")"/>
+                            </TextBlock>
+                            <TextBlock FontSize="12" Margin="0,5,0,0">
+                                <Run Text="Adottante: "/>
+                                <Run Text="{Binding Adopter.FirstName}"/>
+                                <Run Text=" "/>
+                                <Run Text="{Binding Adopter.LastName}"/>
+                            </TextBlock>
+                            <TextBlock FontSize="11" Foreground="Gray" Margin="0,2,0,0">
+                                <Run Text="{Binding AdoptionDate}"/>
+                            </TextBlock>
+                        </StackPanel>
+                    </Border>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+    </Grid>
+</Window>

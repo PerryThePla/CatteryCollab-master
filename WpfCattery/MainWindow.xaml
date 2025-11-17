@@ -1,0 +1,28 @@
+﻿<Window x:Class="WpfCattery.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfCattery"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Margin="0,10,0,0">
+        <Label x:Name="lblTotGatti" Content="Totale Gatti:" Margin="52,66,635,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold"/>
+        <Label x:Name="lblTotGattiMaschi" Content="Totale Gatti Maschi:" HorizontalAlignment="Left" Margin="52,105,0,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold"/>
+        <Label x:Name="lblTotGattiFemmine" Content="Totale Gatti Femmine:" HorizontalAlignment="Left" Margin="52,144,0,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold"/>
+        <Menu Margin="0,-10,0,387">
+            <MenuItem Header="Menu Gatto">
+                <Button Content="Aggiungi Gatto" Click="AddCat_Click"/>
+                <Button Content="Gestisci Gatti" Click="ManageCats_Click"/>
+            </MenuItem>
+            <MenuItem Header="Menu Adozioni">
+                <Button Content="Aggiungi Adozione" Click="AddAdoption_Click"/>
+                <Button Content="Gestisci Adozioni" Click="ManageAdoptions_Click"/>
+            </MenuItem>
+            <MenuItem Header="Menu Adottanti">
+                <Button Content="Aggiungi Adottante" Click="AddAdopter_Click"/>
+                <Button Content="Gestisci Adottanti" Click="ManageAdopters_Click"/>
+            </MenuItem>
+        </Menu>
+    </Grid>
+</Window>

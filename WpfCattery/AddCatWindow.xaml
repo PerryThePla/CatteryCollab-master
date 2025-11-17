@@ -1,0 +1,21 @@
+﻿<Window x:Class="WpfCattery.AddCatWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfCattery"
+        mc:Ignorable="d"
+        Title="AddCatWindow" Height="300" Width="250">
+    <Grid>
+        <TextBox x:Name="TBCatName" HorizontalAlignment="Left" Margin="25,26,0,0" TextWrapping="Wrap" Text="Nome Gatto" VerticalAlignment="Top" Width="200" Height="22"/>
+        <TextBox x:Name="TBCatBreed" HorizontalAlignment="Left" Margin="25,53,0,0" TextWrapping="Wrap" Text="Razza Gatto" VerticalAlignment="Top" Width="200" Height="22"/>
+        <TextBox x:Name="TBDescription" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Descrizione Gatto" VerticalAlignment="Top" Width="200" Height="22" Margin="25,222,0,0"/>
+        <CheckBox x:Name="CBIsMale" Content="Maschio" HorizontalAlignment="Left" Margin="25,91,0,0" VerticalAlignment="Top"/>
+        <DatePicker x:Name="DPArrivalDate" HorizontalAlignment="Left" Margin="25,126,0,0" VerticalAlignment="Top" SelectedDateFormat="Short" Text="Data di arrivo" Width="147" />
+        <DatePicker x:Name="DPDepartureDate" HorizontalAlignment="Left" Margin="25,155,0,0" VerticalAlignment="Top" SelectedDateFormat="Short" Text="Data di rilascio" Width="147" />
+        <DatePicker x:Name="DPBirthDate" HorizontalAlignment="Left" Margin="25,184,0,0" VerticalAlignment="Top" SelectedDateFormat="Short" Text="Data di nascita" Width="147"/>
+        <Label Content="(opzionale)" Margin="172,155,204,246"></Label>
+        <Label Content="(opzionale)" Margin="172,184,204,217"/>
+        <Button x:Name="BTNAggiungiGatto" Content="Finito" HorizontalAlignment="Left" Margin="98,254,0,0" VerticalAlignment="Top" Click="BTNAggiungiGatto_Click"/>
+    </Grid>
+</Window>

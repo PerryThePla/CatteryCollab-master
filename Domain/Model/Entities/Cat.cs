@@ -20,7 +20,7 @@ namespace Domain.Model.Entities
                 }
                 else
                 {
-                    throw new ArgumentOutOfRangeException("The name can't be null or whit white space");
+                    throw new ArgumentNullException("The name can't be null or whit white space");
                 }
             }
         }
@@ -37,7 +37,7 @@ namespace Domain.Model.Entities
                 }
                 else 
                 {
-                    throw new ArgumentOutOfRangeException("breed can't be null or with white space");
+                    throw new ArgumentNullException("breed can't be null or with white space");
                 }
             }
         }
@@ -66,6 +66,14 @@ namespace Domain.Model.Entities
             Description = description;
             ID = GenerateID();
         }
+        public Cat(string name, string breed, bool ismale, DateOnly arrivalDate, DateOnly? departureDate, DateOnly? birthDate, string description, string id) : this(name, breed, ismale, arrivalDate, departureDate, birthDate, description)
+        {
+            if(string.IsNullOrEmpty(id))
+            {
+                throw new ArgumentNullException("ID can't be null or empty");
+            }
+            ID = id;
+        }
 
         private string GenerateID()
         {
@@ -80,6 +88,7 @@ namespace Domain.Model.Entities
         public void UpdateDepartureDate(DateOnly? departureDate)
         {
             DepartureDate = departureDate;
+            Description += $"\nDeparture Date updated to: {departureDate?.ToString("dd/MM/yyyy") ?? ""}";
         }
 
         public override string ToString()
